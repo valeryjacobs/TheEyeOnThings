@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="TheEyeOnThings.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TheEyeOnThings"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Black">
+        <CaptureElement x:Name="camCaptureElement" HorizontalAlignment="Center" />
+        <!--<Image Width="300" Height="400" Source="Assets/WideLogo.png" ></Image>-->
+        <Button Background="Transparent"  BorderThickness="0" x:Name="switchCam" Click="switchCam_Click" FontSize="24" Margin="7" VerticalAlignment="Bottom" HorizontalAlignment="Left" >
+            <Grid>
+                <Ellipse Fill="#7F0000FF" Width="40" Height="40" Opacity="0.5"></Ellipse>
+            </Grid>
+        </Button>
+        <Button Margin="60,7,7,7" Background="Transparent"  BorderThickness="0" x:Name="setCam" Click="setCam_Click" FontSize="24" VerticalAlignment="Bottom" HorizontalAlignment="Left" >
+            <Grid>
+                <Ellipse Fill="Yellow"  Width="40" Height="40" Opacity="0.5"></Ellipse>
+            </Grid>
+        </Button>
+
+
+        <TextBox BorderThickness="0" FontSize="30" Background="Black" Foreground="White"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,30"  x:Name="title"></TextBox>
+    </Grid>
+</Page>
